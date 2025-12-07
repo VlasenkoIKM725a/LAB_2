@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <cmath>
 
 using namespace std;
@@ -10,22 +10,22 @@ int main() {
     int remainder;
 
     cout << "Enter x (0...1]: ";
-    cin >> x; // Введення x
+    cin >> x; // Р’РІРµРґРµРЅРЅСЏ x
 
-    if (x == 0) { // Перевірка ділення на нуль
+    if (x == 0) { // РџРµСЂРµРІС–СЂРєР° РґС–Р»РµРЅРЅСЏ РЅР° РЅСѓР»СЊ
         cout << "Error: x cannot be 0." << endl;
         return 1;
     }
 
-    // Обчислення функції f(x)
+    // РћР±С‡РёСЃР»РµРЅРЅСЏ С„СѓРЅРєС†С–С— f(x)
     f_x = abs(pow(x, 3)) + x / (3.8 * atan(x));
 
     cout << "f(x): " << f_x << endl;
 
-    rounded_f = round(f_x); // Округлення 
+    rounded_f = round(f_x); // РћРєСЂСѓРіР»РµРЅРЅСЏ 
     cout << "Rounded: " << rounded_f << endl;
 
-    remainder = rounded_f % 10; // Обчислення залишку
+    remainder = rounded_f % 10; // РћР±С‡РёСЃР»РµРЅРЅСЏ Р·Р°Р»РёС€РєСѓ
     cout << "Mod 10: " << remainder << endl;
 
     return 0;
